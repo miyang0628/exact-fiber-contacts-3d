@@ -1,0 +1,13 @@
+{
+  "verification": {
+    "checks": 240,
+    "mismatches": 0
+  },
+  "bootstrap_200_networks_n1600_seconds": {
+    "brute": 11.902,
+    "sap": 0.768,
+    "cell": 0.744
+  },
+  "R": "R version 4.3.3 (2024-02-29)",
+  "Rcpp": "1.0.12"
+}
