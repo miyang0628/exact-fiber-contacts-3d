@@ -1,8 +1,15 @@
-# Paper I — R code and results
+# R code and results
 
 **Exact moments of fiber contact counts in three-dimensional random networks:
 Steiner excluded volumes, finite-radius projections, and exact computation**
-(Yang & Chun)
+
+Munil Yang and Heuiju Chun. Submitted to *AIMS Mathematics*.
+
+> **How to cite.** M. Yang, H. Chun, *Exact moments of fiber contact counts in
+> three-dimensional random networks: Steiner excluded volumes, finite-radius
+> projections, and exact computation*, AIMS Math., **x** (2026), xxx–xxx.
+> https://doi.org/10.3934/math.2026xxx
+> *(volume, pages and DOI to be filled in on acceptance)*
 
 R (>= 4.2) with `Rcpp` and `jsonlite`; a C++ compiler is needed once to compile `R/engine.cpp`.
 Run everything from this folder.
@@ -38,10 +45,10 @@ Rscript scripts/09_figures.R && Rscript scripts/10_paper_tables.R   # tables/fig
   c075/c050/c025 (oblate anisotropy), box (2 x 1 x 0.5), torus_eq, torus_mix. Margin rho = 0.01.
 - `moments.csv`, `q_sweep.csv`, `zeta_exact.csv`, `zeta_configs.json`: Tables 2-4 and the exact
   zeta_{1,r} of each configuration.
-- `config_analysis.csv`: per configuration and n, simulated vs exact mean and variance (and further
-  distributional summaries used in Paper II).
+- `config_analysis.csv`: per configuration and n, simulated vs exact mean and variance (additional
+  distributional summaries are also recorded but not used in this paper).
 - `estimation_replicates.csv`, `estimation_summary.csv`: radius estimators (exact, first-order,
-  thin-fiber), standard errors, and interval limits (intervals are evaluated in Paper II).
+  thin-fiber), standard errors, and interval limits (the interval columns are not evaluated in this paper).
 - `timing.csv`, `grid.csv`, `benchmark_extra.json`: timings (R 4.3.3, Rcpp 1.0.12, Intel Xeon 2.1 GHz),
   exactness verification (240 networks, 0 mismatches), bootstrap cost.
 
